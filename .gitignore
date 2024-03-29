@@ -1,3 +1,5 @@
 android-app/android.keystore
 android-app/app-release-*
 android-app/app/
+android-app/.gradle/
+android-app/gradle/
