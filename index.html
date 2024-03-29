@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+    <title> Simple Tic Tac Toe </title>
+</head>
+<body>
+
+    <section id="setup">
+        <div>
+            <span id="player-A"> X </span>
+            vs
+            <span id="player-B"> O </span>
+        </div>
+        <div>
+            Next:
+            <span id="player-next"></span>
+        </div>
+        
+    </section>
+
+    <section id="board">
+        <table>
+            <tr>
+                <td data-position="00"></td>
+                <td data-position="01"></td>
+                <td data-position="02"></td>
+            </tr>
+            <tr>
+                <td data-position="10"></td>
+                <td data-position="11"></td>
+                <td data-position="12"></td>
+            </tr>
+            <tr>
+                <td data-position="20"></td>
+                <td data-position="21"></td>
+                <td data-position="22"></td>
+            </tr>
+        </table>
+    </section>
+
+    <dialog>
+        <span id="dialog-text"></span>
+        <button id="dialog-close"> Next round </button>
+    </dialog>
+
+</body>
+</html>
