@@ -1,8 +1,0 @@
-simple_ttt/lnoppinger/DelegationService.java
- simple_ttt.lnoppinger.DelegationService
-simple_ttt/lnoppinger/BuildConfig.java
- simple_ttt.lnoppinger.BuildConfig
-simple_ttt/lnoppinger/LauncherActivity.java
- simple_ttt.lnoppinger.LauncherActivity
-simple_ttt/lnoppinger/Application.java
- simple_ttt.lnoppinger.Application
