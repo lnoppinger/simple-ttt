@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Simple page to play tic tac toe">
 
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json">
+
     <script src="./script.js" defer></script>
 
     <title> Simple Tic Tac Toe </title>
@@ -14,9 +17,9 @@
 
     <section id="setup">
         <div>
-            <span id="player-A"> X </span>
+            <span id="player-A"> &#128568; </span>
             vs
-            <span id="player-B"> O </span>
+            <span id="player-B"> &#128048; </span>
         </div>
         <div>
             Next:
@@ -49,6 +52,28 @@
         <span id="dialog-text"></span>
         <button id="dialog-close"> Next round </button>
     </dialog>
+
+    <script defer>
+        const registerServiceWorker = async () => {
+            if ("serviceWorker" in navigator) {
+                try {
+                const registration = await navigator.serviceWorker.register("/serviceworker.js", {
+                    scope: "/"
+                })
+                if (registration.installing) {
+                    console.log("Service worker installing")
+                } else if (registration.waiting) {
+                    console.log("Service worker installed")
+                } else if (registration.active) {
+                    console.log("Service worker active")
+                }
+                } catch (error) {
+                console.error(`Registration failed with ${error}`)
+                }
+            }
+        }
+        registerServiceWorker()
+    </script>
 
 </body>
 </html>

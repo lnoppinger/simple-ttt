@@ -25,7 +25,7 @@ body {
 
 #board {
     height: max-content;
-    font-size: 20vmin
+    font-size: 18vmin
 }
 #board table {
     border-collapse: collapse;
@@ -46,7 +46,7 @@ body {
 
 @keyframes winning-animation {
     0% {
-        font-size: 20vmin;
+        font-size: 18vmin;
         color: black;
     }
     90% {
@@ -54,7 +54,7 @@ body {
         color: red;
     }
     100% {
-        font-size: 20vmin;
+        font-size: 18vmin;
         color: red;
     }
 }
