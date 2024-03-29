@@ -52,6 +52,8 @@ function reset() {
 }
 
 function addMarker(e) {
+    e.target.removeEventListener("click", addMarker)
+
     let value = document.querySelector("#setup").dataset.turn
 
     e.target.dataset.value                           = value
