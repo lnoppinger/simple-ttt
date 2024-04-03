@@ -1,0 +1,11 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "simple_ttt.lnoppinger",
+            "sha256_cert_fingerprints":
+            ["99:A4:66:B6:CA:B8:FA:97:91:C4:CD:7C:00:7A:D8:CF:2C:D5:C9:2D:FF:05:29:D5:BC:41:92:E9:D1:60:CA:0F"]
+        }
+    }
+]
