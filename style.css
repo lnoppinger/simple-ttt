@@ -1,6 +1,6 @@
 :root {
-    --black: black;
-    --white: white;
+    --black: #222222;
+    --white: #dddddd;
     --red: red;
 }
 
@@ -42,8 +42,9 @@ body {
 #board table td {
     width: 25vmin;
     height: 25vmin;
-    border: 5px solid var(--black);
+    border: 0.6vmin solid var(--black);
     text-align: center;
+    cursor: pointer;
 }
 
 #board table td[data-winning-animation] {
@@ -77,20 +78,19 @@ dialog[open] {
     background-color: var(--white);
     font-size: 18vmin
 }
-dialog[open] > button {
-    margin-top: 50px;
-}
 dialog::backdrop {
     background-color: var(--white);
 }
 dialog button {
     background-color: var(--white);
-    border: 1vmin solid var(--black);
+    outline: none;
+    border: 0.6vmin solid var(--black);
     border-radius: 9vmin;
     padding: 3vmin;
     font-size: 6vmin;
     color: var(--black);
-    cursor: pointer
+    cursor: pointer;
+    margin-top: 6vmin;
 }
 dialog span {
     text-align: center;
