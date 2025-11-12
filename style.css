@@ -75,6 +75,7 @@ dialog[open] {
     justify-content: center;
     color: var(--black);
     background-color: var(--white);
+    font-size: 18vmin
 }
 dialog[open] > button {
     margin-top: 50px;
@@ -82,6 +83,19 @@ dialog[open] > button {
 dialog::backdrop {
     background-color: var(--white);
 }
+dialog button {
+    background-color: var(--white);
+    border: 1vmin solid var(--black);
+    border-radius: 9vmin;
+    padding: 3vmin;
+    font-size: 6vmin;
+    color: var(--black);
+    cursor: pointer
+}
+dialog span {
+    text-align: center;
+}
+
 
 @media (prefers-color-scheme: dark) {
     :root {
